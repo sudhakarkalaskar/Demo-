@@ -1,0 +1,25 @@
+#Python program to print Black Red
+#loop for 100 times i.e. range
+for BlackRed in range(100):
+
+	# number divisible by 3, print 'Black'
+	# in place of the number 3
+	if BlackRed % 15 == 0:
+		print("BlackRed")
+		continue
+
+	# number divisible by 5, print 'Red'
+	# in place of the number 5
+	elif BlackRed % 3 == 0:
+		print("Black")
+		continue
+
+	# number divisible by 15 (divisible
+	# by both 3 & 5), print 'BlackRed' in
+	# place of the number 3 & 5
+	elif BlackRed % 5 == 0:
+		print("Red")
+		continue
+
+	# print numbers
+	print(BlackRed)
